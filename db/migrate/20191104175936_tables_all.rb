@@ -19,7 +19,9 @@ class TablesAll < ActiveRecord::Migration[5.2]
               mesa_id integer,
               menu_id integer,
               pago BOOLEAN,
-              created_at timestamp current_time
+              created_at timestamp current_time,
+              FOREIGN KEY (menu_id) REFERENCES menu (id),
+              FOREIGN KEY (mesa_id) REFERENCES mesas (id)
           );"
   end
 

@@ -4,6 +4,6 @@ source "https://rubygems.org"
 gem "sqlite3"
 gem "sinatra"
 gem "rerun"
-gem "standalone"
-gem "active_record"
+gem "standalone_migrations", '~> 5.2', '>= 5.2.7' 
+gem "activerecord"
 gem "respec"
